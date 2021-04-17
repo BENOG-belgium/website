@@ -1,1 +1,2 @@
-django
+django==3.2
+django-bootstrap4==2.2.0

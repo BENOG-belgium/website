@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import benog.views
 
 urlpatterns = [
+    path('', benog.views.home, name='home'),
     path('admin/', admin.site.urls),
 ]
+
+handler400 = benog.views.error_view(400, "Impossible de traiter cette requête")
+handler403 = benog.views.error_view(403, "Tu n'as pas la permission de faire ça")
+handler404 = benog.views.error_view(404, "Impossible de trouver ça")
+handler500 = benog.views.error_view(500, "Une erreur serveur s'est produite")
