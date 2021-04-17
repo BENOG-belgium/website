@@ -1,0 +1,31 @@
+{% load static %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block bootstrapcss %}
+    {% bootstrap_css %}
+    {% endblock %}
+    {% bootstrap_javascript jquery=1 %}
+
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+    <link rel="icon" href="/static/img/favicon.ico">
+    <title>{% block title %}beNOG{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+
+<body class="base-body">
+    <header class="base-header">
+        <img src="/static/img/benog.png">
+    </header>
+    <section>
+    {% block content %}
+    {% endblock %}
+    </section>
+</body>
+
+</html>
