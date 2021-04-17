@@ -1,5 +1,5 @@
 ![SHAME](https://api.travis-ci.org/BENOG-belgium/website.svg?branch=master)
-[![Django CI](https://github.com/BENOG-belgium/website/actions/workflows/django.yml/badge.svg?branch=master&event=check_run)](https://github.com/BENOG-belgium/website/actions/workflows/django.yml)
+[![Django CI](https://github.com/BENOG-belgium/website/actions/workflows/django.yml/badge.svg)](https://github.com/BENOG-belgium/website/actions/workflows/django.yml)
 
 # beNog Website :
 ## What :
