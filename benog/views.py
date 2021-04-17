@@ -9,6 +9,6 @@ def error_view(code, msg=""):
         return response
     return
 
+
 def home(request):
-    #return HttpResponse("Welcome to BEnOG")
     return render(request, "home.html")
