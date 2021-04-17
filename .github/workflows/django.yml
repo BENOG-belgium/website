@@ -28,3 +28,4 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
+        flake8 --ignore=E501,F401,E402,F811,E731,F403 .
