@@ -1,0 +1,23 @@
+sudo: false
+
+language: python
+
+python:
+  - "3.8"
+
+cache: pip
+
+install:
+  - "pip install -U pip setuptools"
+  - "pip install -r requirements.txt"
+
+
+script:
+  - flake8 --ignore=E501,F401,E402,F811,E731,F403 .
+  - ./manage.py check
+
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
