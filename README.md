@@ -22,3 +22,5 @@ pip install -r requirements.txt
 * Wiki
 * Sponsors
 * Making it all pretty
+* Contact Form
+* Social Media Link
