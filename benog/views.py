@@ -13,5 +13,6 @@ def error_view(code, msg=""):
 def home(request):
     return render(request, "home.html")
 
+
 def contact(request):
     return render(request, "contact.html")

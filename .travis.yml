@@ -15,6 +15,7 @@ install:
 script:
   - flake8 --ignore=E501,F401,E402,F811,E731,F403 .
   - ./manage.py check
+  - ./manage.py test
 
 
 notifications:

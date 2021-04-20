@@ -19,7 +19,6 @@ import benog.views
 
 urlpatterns = [
     path('', benog.views.home, name='home'),
-    #path('home', benog.views.home, name='home'),
     path('contact', benog.views.contact, name='contact'),
     path('admin/', admin.site.urls),
 ]
