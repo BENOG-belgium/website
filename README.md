@@ -17,6 +17,11 @@ pip install -r requirements.txt
 ./manage.py runserver
 ```
 
+## Run in Docker :
+```
+docker-compose up --build
+```
+
 ## Todo :
 * Event Page (being able to set up events from admin page and register with user name)
 * Mailing List
