@@ -21,6 +21,11 @@ urlpatterns = [
     path('', benog.views.home, name='home'),
     path('contact', benog.views.contact, name='contact'),
     path('admin/', admin.site.urls),
+    path('events/', benog.views.construction, name='events'),
+    path('wiki/', benog.views.construction, name='wiki'),
+    path('sponsors/', benog.views.construction, name='sponsors'),
+    path('ml/', benog.views.construction, name='ml'),
+    path('login/', benog.views.construction, name='login'),
 ]
 
 handler400 = benog.views.error_view(400, "Request not possible")

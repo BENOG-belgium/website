@@ -16,3 +16,7 @@ def home(request):
 
 def contact(request):
     return render(request, "contact.html")
+
+
+def construction(request):
+    return render(request, "construction.html")
