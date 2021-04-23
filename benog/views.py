@@ -7,7 +7,7 @@ def error_view(code, msg=""):
         response = render(request, "error.html", {'code': code, 'message': msg})
         response.status_code = code
         return response
-    return
+    return view
 
 
 def home(request):
