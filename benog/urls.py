@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import benog.views
+import users.views
+import users.urls
 
 urlpatterns = [
     path('', benog.views.home, name='home'),
@@ -24,7 +26,7 @@ urlpatterns = [
     path('events/', benog.views.construction, name='events'),
     path('wiki/', benog.views.construction, name='wiki'),
     path('ml/', benog.views.construction, name='ml'),
-    path('login/', benog.views.construction, name='login'),
+    path('login/', include(users.urls)),
 ]
 
 handler400 = benog.views.error_view(400, "Request not possible")
