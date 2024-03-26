@@ -1,4 +1,4 @@
-django==5.0.2
+django==5.0.3
 django-bootstrap4==24.1
 flake8==7.0.0
 termcolor==2.4.0
